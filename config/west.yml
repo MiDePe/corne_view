@@ -11,7 +11,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk_urob
+    #- name: zmk_urob
       remote: urob
       revision: main-with-native-mouse
       import: app/west.yml
