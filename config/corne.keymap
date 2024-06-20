@@ -60,10 +60,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3  &msc SCROLL_UP    &kp PAGE_UP
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &msc SCROLL_DOWN  &kp PAGE_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans    &trans            &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &kp H   &kp HASH  &trans  &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3  &msc SCROLL_UP    &kp PAGE_UP
+&trans  &trans  &trans    &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &msc SCROLL_DOWN  &kp PAGE_DOWN
+&trans  &trans  &trans    &trans  &trans  &trans    &trans          &trans          &trans           &trans    &trans            &trans
+                          &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
     };
