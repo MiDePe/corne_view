@@ -49,7 +49,7 @@
 &kp ESC  &bt BT_PRV    &bt BT_NXT    &none         &none         &none             &kp SEMI      &kp SQT       &kp LEFT_BRACKET  &kp MINUS     &none         &none
 &kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_SHIFT
 &kp F1   &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9            &kp F10       &kp F11       &kp F12
-                                     &kp LGUI      &trans        &kp LEFT_SHIFT    &kp RET       &trans        &kp RALT
+                                     &kp LGUI      &trans        &kp LEFT_SHIFT    &kp RCTRL     &trans        &kp RALT
             >;
         };
 
@@ -70,10 +70,10 @@
 
         NAV {
             bindings = <
-&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP    &none    &mkp MB3        &mkp LCLK         &mmv MOVE_UP     &mkp RCLK        &none  &none
-&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none    &mwh SCROLL_UP  &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
-&none            &none           &none         &none      &none          &none    &mwh MOVE_DOWN  &mwh SCROLL_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
-                                               &none      &none          &none    &none           &none             &none
+&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP    &none    &mkp MB3        &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &none  &none
+&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none    &mwh MOVE_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
+&none            &none           &none         &none      &none          &none    &mwh MOVE_DOWN  &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
+                                               &none      &none          &none    &none           &none           &none
             >;
         };
     };
