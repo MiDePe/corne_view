@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        blt_x {
+            bindings = <&bt BT_CLR>;
+            key-positions = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
