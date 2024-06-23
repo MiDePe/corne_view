@@ -75,10 +75,10 @@
 
         NAV {
             bindings = <
-&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP    &none    &mkp MB3        &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &none  &none
-&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none    &msc MOVE_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
-&none            &none           &none         &none      &none          &none    &mwh MOVE_DOWN  &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
-                                               &none      &none          &none    &none           &none           &none
+&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP    &none    &mwh SCROLL_UP    &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &none  &none
+&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none    &msc SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
+&none            &none           &none         &none      &none          &none    &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
+                                               &none      &none          &none    &none             &none           &none
             >;
         };
     };
