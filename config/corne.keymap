@@ -51,9 +51,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &bt BT_PRV    &bt BT_NXT    &none         &none         &none             &kp SEMI      &kp SQT       &kp LEFT_BRACKET  &kp MINUS     &none         &none
-&kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_SHIFT
-&kp F1   &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9            &kp F10       &kp F11       &kp F12
+&kp ESC  &bt BT_PRV    &bt BT_NXT    &none         &none         &none             &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE     &none         &none
+&kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp RIGHT_SHIFT
+&kp F1   &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
                                      &kp LGUI      &trans        &kp LEFT_SHIFT    &kp RCTRL     &trans        &kp RALT
             >;
         };
@@ -66,19 +66,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp HASH   &kp SLASH  &kp BACKSLASH  &kp PIPE     &kp CARET  &kp LEFT_BRACKET  &kp ASTRK  &kp SEMI  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp SQT   &kp MINUS  &none      &none          &none        &kp MINUS  &kp EQUAL         &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &none     &none      &none      &none          &none        &kp UNDER  &kp KP_MINUS      &kp COMMA  &kp DOT   &kp PIPE  &kp TILDE
-                                &kp LGUI   &none          &kp SPACE    &kp RET    &none             &kp RALT
+&kp TAB    &kp RA(AMPS)   &kp RA(RPAR)  &kp RA(MINUS)  &kp RA(LEFT_PARENTHESIS)  &kp BACKSLASH        &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
+&kp RA(E)  &kp SQT        &kp MINUS     &kp STAR       &kp LEFT_PARENTHESIS      &kp AT               &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_PARENTHESIS  &kp DOLLAR
+&kp RA(Q)  &kp AMPERSAND  &kp HASH      &kp TILDE      &kp GRAVE                 &kp RIGHT_BRACKET    &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp PIPE               &kp RA(RIGHT_BRACKET)
+                                        &kp LGUI       &none                     &kp SPACE            &kp RET    &none             &kp RALT
             >;
         };
 
         NAV {
             bindings = <
-&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP    &none    &mwh SCROLL_UP    &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &none  &none
-&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none    &msc SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
-&none            &none           &none         &none      &none          &none    &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
-                                               &none      &none          &none    &none             &none           &none
+&kp LC(RA(DEL))  &kp H           &kp UP_ARROW  &none      &kp PAGE_UP      &none    &mwh SCROLL_UP    &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &none  &none
+&none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN    &none    &msc SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none
+&none            &kp PRIOR       &kp INSERT    &kp END    &kp PRINTSCREEN  &none    &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &none  &none
+                                               &none      &none            &none    &none             &none           &none
             >;
         };
     };
