@@ -69,7 +69,7 @@
 &kp RA(NUBS)  &kp RA(N7)     &kp RA(N0)     &kp RA(N8)  &kp RA(N9)            &kp PIPE             &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
 &kp RA(E)     &kp SQT        &kp MINUS      &kp STAR    &kp LEFT_PARENTHESIS  &kp AT               &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_PARENTHESIS  &kp DOLLAR
 &kp RA(Q)     &kp AMPERSAND  &kp RA(MINUS)  &kp NUBS    &kp LS(NUBS)          &kp RIGHT_BRACKET    &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp BACKSLASH          &kp RA(RIGHT_BRACKET)
-                                            &kp LGUI    &none                 &kp SPACE            &kp RET    &none             &kp RALT
+                                            &kp LGUI    &none                 &kp LEFT_SHIFT       &kp RET    &none             &kp RALT
             >;
         };
 
