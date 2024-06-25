@@ -69,7 +69,7 @@
 &kp RA(NUBS)  &kp RA(N7)  &kp RA(N0)  &kp AMPS  &kp RA(MINUS)         &kp PIPE          &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
 &kp RA(E)     &kp SQT     &kp MINUS   &kp STAR  &kp LEFT_PARENTHESIS  &kp AT            &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_BRACKET      &kp DOLLAR
 &kp RA(Q)     &kp RA(N8)  &kp RA(N9)  &kp NUBS  &kp LS(NUBS)          &kp BACKSLASH     &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
-                                      &kp LGUI  &none                 &kp LEFT_SHIFT    &kp RET    &none             &kp RALT
+                                      &none     &none                 &kp LEFT_SHIFT    &none      &none             &none
             >;
         };
 
@@ -77,8 +77,8 @@
             bindings = <
 &kp LC(RA(DEL))       &kp K_CONTEXT_MENU  &kp UP_ARROW  &none      &kp PAGE_UP      &none             &mwh SCROLL_UP    &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &kp C_REWIND      &kp C_FAST_FORWARD
 &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT  &kp PAGE_DOWN    &none             &msc SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_VOL_DN      &kp C_VOL_UP
-&kp C_BRIGHTNESS_DEC  &kp HOME            &kp INSERT    &kp END    &kp PRINTSCREEN  &none             &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &kp K_PLAY_PAUSE  &kp K_MUTE
-                                                        &none      &none            &kp LEFT_SHIFT    &none             &none           &none
+&kp C_BRIGHTNESS_DEC  &kp HOME            &kp INSERT    &kp END    &kp PRINTSCREEN  &none             &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &kp C_PLAY_PAUSE  &kp C_MUTE
+                                                        &none      &kp LEFT_WIN     &kp LEFT_SHIFT    &none             &none           &none
             >;
         };
     };
