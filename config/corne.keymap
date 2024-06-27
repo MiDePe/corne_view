@@ -15,8 +15,8 @@
 
         blt_x {
             bindings = <&bt BT_CLR>;
-            key-positions = <1 2>;
-            layers = <1>;
+            key-positions = <5 17>;
+            layers = <3>;
         };
     };
 
