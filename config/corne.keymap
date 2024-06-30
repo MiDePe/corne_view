@@ -61,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp RA(NUBS)  &kp RA(N7)  &kp RA(N0)  &kp AMPS  &kp RA(MINUS)         &kp PIPE          &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
-&kp RA(E)     &kp SQT     &kp MINUS   &kp STAR  &kp LEFT_PARENTHESIS  &kp AT            &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_BRACKET      &kp DOLLAR
-&kp RA(Q)     &kp RA(N8)  &kp RA(N9)  &kp NUBS  &kp LS(NUBS)          &kp BACKSLASH     &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
-                                      &none     &kp SPACE             &kp LEFT_SHIFT    &none      &none             &none
+&kp RA(NUBS)  &kp RA(N7)  &kp RA(N0)    &kp RA(N8)  &kp RA(N9)            &kp PIPE          &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
+&kp RA(E)     &kp SQT     &kp MINUS     &kp STAR    &kp LEFT_PARENTHESIS  &kp AT            &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_BRACKET      &kp DOLLAR
+&kp RA(Q)     &kp NUBS    &kp LS(NUBS)  &kp AMPS    &kp RA(MINUS)         &kp BACKSLASH     &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
+                                        &none       &kp SPACE             &kp LEFT_SHIFT    &none      &none             &none
             >;
         };
 
