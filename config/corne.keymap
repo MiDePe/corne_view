@@ -48,7 +48,7 @@
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7        &kp F8         &kp F9        &kp F10        &kp F11        &kp F12
 &kp TAB     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &kp C_SLEEP_MODE
-&kp ESCAPE  &none         &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE    &none         &none          &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK  &kp K_FORWARD
+&kp ESCAPE  &none         &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE    &none         &kp C_AC_HOME  &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK  &kp K_FORWARD
                                         &none         &trans        &none        &kp RCTRL     &kp RIGHT_ALT  &none
             >;
         };
