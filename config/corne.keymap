@@ -31,9 +31,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_ALT      &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y            &kp U  &kp I  &kp O          &none    &kp RIGHT_ALT
-&kp LEFT_WIN      &kp A  &kp S  &kp D  &kp F      &kp G        &kp H            &kp J  &kp K  &kp L          &kp TAB  &kp CLCK
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N            &kp M  &kp P  &kp BACKSPACE  &none    &kp RIGHT_CONTROL
+&kp LEFT_ALT      &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y            &kp U  &kp I  &kp O          &kp C_AC_HOME     &kp RIGHT_ALT
+&kp LEFT_WIN      &kp A  &kp S  &kp D  &kp F      &kp G        &kp H            &kp J  &kp K  &kp L          &kp C_SLEEP_MODE  &kp CLCK
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N            &kp M  &kp P  &kp BACKSPACE  &kp TAB           &kp RIGHT_CONTROL
                                 &mo 1  &kp SPACE  &kp ENTER    &kp RIGHT_SHIFT  &mo 2  &mo 3
             >;
         };
@@ -46,10 +46,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7        &kp F8         &kp F9        &kp F10        &kp F11        &kp F12
-&kp TAB     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &kp C_SLEEP_MODE
-&kp ESCAPE  &none         &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE    &none         &kp C_AC_HOME  &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK  &kp K_FORWARD
-                                        &none         &trans        &none        &kp RCTRL     &kp RIGHT_ALT  &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7        &kp F8        &kp F9        &kp F10        &kp F11        &kp F12
+&kp TAB     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &none
+&kp ESCAPE  &none         &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE    &none         &none         &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK  &kp K_FORWARD
+                                        &none         &trans        &none        &kp RCTRL     &kp SPACE     &none
             >;
         };
 
