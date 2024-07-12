@@ -25,17 +25,17 @@
 
         ABC {
             //       1        2     3      4        5         6
-            // --------------------- LEFT ---------------------------
-            //L1/ |  ALT   |  Q  |  W  |   E    |   R   |     T     |
-            //L2/ |  WIN   |  A  |  S  |   D    |   F   |     G     |
-            //L3/ | STRG L |  Y  |  X  |   C    |   V   |     B     |
-            //L4/                      | <NUM>  | Space |   Enter   |
-            //---------------------- RIGHT --------------------------
-            //R1/ |   Z    |  U  |  I  |  O     | Home  | ALT GR    |
-            //R2/ |   H    |  J  |  K  |  L     | Sleep | CAPS LOCK |
-            //R3/ |   N    |  M  |  P  | Backsp |  Tab  | STRG R    |
-            //R4/                      | ShiftR | <SYM> | <NAV>     |
-            //-------------------------------------------------------
+            //LINKS-----------------------------------------------------
+            //L1/ |  ALT   |   Q   |   W   |   E    |   R   |     T     |
+            //L2/ |  WIN   |   A   |   S   |   D    |   F   |     G     |
+            //L3/ | STRG L |   Y   |   X   |   C    |   V   |     B     |
+            //L4/ -------------------------| <NUM>  | Space |   Enter   |
+            //RECHTS-----------------------------------------------------
+            //R1/ |   Z    |   U   |   I   |  O     | Home  | ALT GR    |
+            //R2/ |   H    |   J   |   K   |  L     | Sleep | CAPS LOCK |
+            //R3/ |   N    |   M   |   P   | Backsp |  Tab  | STRG R    |
+            //R4/ | ShiftR | <SYM> | <NAV> |-----------------------------
+            //    --------------------------
 
             bindings = <
             //      1                2      3      4               5                 6
@@ -46,23 +46,23 @@
             /*L3*/  &kp LEFT_CONTROL &kp Z  &kp X  &kp C           &kp V             &kp B
             /*R3*/  &kp N            &kp M  &kp P  &kp BACKSPACE   &kp TAB           &kp RIGHT_CONTROL
             /*L4*/                                 &mo 1           &kp SPACE         &kp ENTER  
-            /*R4*/                                 &kp RIGHT_SHIFT &mo 2             &mo 3
+            /*R4*/  &kp RIGHT_SHIFT &mo 2   &mo 3
             >;
         };
 
         NUM {
-            //      1      2     3      4        5       6
-            // --------------------- LEFT --------------------
-            //L1/ | F1  |  F2 | F3  |   F4   |   F5   |  F6  |
-            //L2/ | TAB |  1  | 2   |   3    |   4    |  5   |  
-            //L3/ | ESC |     | ´   |   `    |   ^    |  °   |
-            //L4/                   |  XXX   |        |      |
-            // --------------------- LEFT --------------------
-            //R1/ | F7  | F8  | F9  | F10    | F11    | F12  |
-            //R2/ |  6  |  7  |  8  |  9     |  0     |      |
-            //R3/ |     |     |     | Backsp | Zurück |  Vor | <- Android
-            //R4/                   | ShiftR | Space  |      |
-            // -----------------------------------------------
+            //      1         2       3         4        5       6
+            //LINKS---------------------------------------------------
+            //L1/ | F1     |  F2    | F3    |   F4   |   F5   |  F6  |
+            //L2/ | TAB    |  1     | 2     |   3    |   4    |  5   |  
+            //L3/ | ESC    |        | ´     |   `    |   ^    |  °   |
+            //L4/  -------------------------|  XXX   |        |      |
+            //RECHTS--------------------------------------------------
+            //R1/ | F7     | F8     | F9    | F10    | F11    | F12  |
+            //R2/ |  6     |  7     |  8    |  9     |  0     |      |
+            //R3/ |        |        |       | Backsp | Zurück |  Vor | <- Android
+            //R4/ | ShiftR | Space  |       |-------------------------
+            //    --------------------------
 
             bindings = <
             //      1             2             3             4              5             6
@@ -73,21 +73,23 @@
             /*L3*/  &kp ESCAPE    &none         &kp EQUAL     &kp PLUS       &kp GRAVE     &kp TILDE
             /*R3*/  &none         &none         &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK &kp K_FORWARD
             /*L4*/                                            &none          &none         &none        
-            /*R4*/                                            &kp RCTRL      &kp SPACE     &none
+            /*R4*/  &kp RCTRL     &kp SPACE     &none
             >;
         };
 
         SYM {            
             //       1     2     3      4       5        6
-            // -------------------- LEFT -------------------------
+            //LINKS--------------------------------------------
             //L1/ |  |  |  {  |  }  |  [    |  ]     |   '    |
-            //R1/ |  !  |  ü  |  *  |  ö    |  %     |   §    |
             //L2/ |  €  |  ä  |  ß  |  (    |  )     |   "    |
-            //R2/ |  ?  |  ,  |  .  |  -    |  +     |   $    |
             //L3/ |  @  |  <  |  >  |  /    |  \     |   #    |
+            //L4/ ------------------|       | Space  | ShiftL |
+            //RECHTS-------------------------------------------
+            //R1/ |  !  |  ü  |  *  |  ö    |  %     |   §    |
+            //R2/ |  ?  |  ,  |  .  |  -    |  +     |   $    |
             //R3/ |  &  |  ;  |  :  |  _    |  =     |   ~    |
-            //L4/                   |       | Space  | ShiftL |
-            //R4/                   |       |  XXX   |        |
+            //R4/ |     | XXX |     |--------------------------
+            //    -------------------
 
             bindings = < 
             //      1             2                 3                 4             5                      6
@@ -98,22 +100,23 @@
             /*L3*/  &kp RA(Q)     &kp NUBS          &kp LS(NUBS)      &kp AMPS      &kp RA(MINUS)          &kp BACKSLASH
             /*R3*/  &kp CARET     &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
             /*L4*/                                                    &none         &kp SPACE              &kp LEFT_SHIFT    
-            /*R4*/                                                    &none         &none                  &none
+            /*R4*/  &none         &none             &none
             >;
         };
 
         NAV {
             //      1              2              3               4              5             6
-            // -------------------- LEFT ---------------------------------------------------------------------
+            //LINKS -------------------------------------------------------------------------------------------
             //L1/ | Strg+Alt+Ent | Menü         | Pfeil hoch    |              | Bild hoch   | Bluetooth prev |
             //L2/ | Helligk. +   | Pfeil links  | Pfeil runter  | Pfeil rechts | Bild runter | Bluetooth next |
             //L3/ | Helligk. -   | Pos1         | Einf          | Ende         | Druck       |                |
-            //L4/                                               |              | Space       | ShiftL         |
-            // -------------------- RIGHT ---------------------------------------------------------------------
+            //L4/  ---------------------------------------------|              | Space       | ShiftL         |
+            //RECHTS ------------------------------------------------------------------------------------------
             //R1/ | Scroll up    | Linksklick   | Maus hoch     | Rechtsklick  | Prev        | Next           | <- Musik
             //R2/ | Scroll down  | Maus links   | Maus runter   | Maus rechts  | Volume -    | Volume +       |
             //R3/ | Mittelklick  | Scroll links | Scroll rechts | Enft         | Play/Pause  | Mute           |
-            //R4/                                               |              | XXX         |                |
+            //R4/ |              | XXX         |                |----------------------------------------------
+            //    -----------------------------------------------
 
             bindings = <
             //      1                    2                   3                4                5                 6        
@@ -124,7 +127,7 @@
             /*L3*/  &kp C_BRIGHTNESS_DEC &kp HOME            &kp INSERT       &kp END          &kp PRINTSCREEN   &none             
             /*R3*/  &mkp MB3             &mwh MOVE_LEFT      &mwh MOVE_RIGHT  &kp DEL          &kp C_PLAY_PAUSE  &kp C_MUTE
             /*L4*/                                                            &kp LEFT_WIN     &kp SPACE         &kp LEFT_SHIFT    
-            /*R4*/                                                            &none            &none             &none
+            /*R4*/  &none                &none               &none
             >;
         };
     };
