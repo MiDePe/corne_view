@@ -38,15 +38,10 @@
             //    --------------------------
 
             bindings = <
-            //      1                2      3      4               5                 6
-            /*L1*/  &kp LEFT_ALT     &kp Q  &kp W  &kp E           &kp R             &kp T      
-            /*R1*/  &kp Y            &kp U  &kp I  &kp O           &kp C_AC_HOME     &kp RIGHT_ALT
-            /*L2*/  &kp LEFT_WIN     &kp A  &kp S  &kp D           &kp F             &kp G      
-            /*R2*/  &kp H            &kp J  &kp K  &kp L           &kp C_SLEEP_MODE  &kp CLCK
-            /*L3*/  &kp LEFT_CONTROL &kp Z  &kp X  &kp C           &kp V             &kp B
-            /*R3*/  &kp N            &kp M  &kp P  &kp BACKSPACE   &kp TAB           &kp RIGHT_CONTROL
-            /*L4*/                                 &mo 1           &kp SPACE         &kp ENTER  
-            /*R4*/  &kp RIGHT_SHIFT &mo 2   &mo 3
+&kp LEFT_ALT      &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y            &kp U  &kp I  &kp O          &kp HOME     &kp RIGHT_ALT
+&kp LEFT_WIN      &kp A  &kp S  &kp D  &kp F      &kp G        &kp H            &kp J  &kp K  &kp L          &kp K_SLEEP  &kp CLCK
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N            &kp M  &kp P  &kp BACKSPACE  &kp TAB      &kp RIGHT_CONTROL
+                                &mo 1  &kp SPACE  &kp ENTER    &kp RIGHT_SHIFT  &mo 2  &mo 3
             >;
         };
 
@@ -65,19 +60,14 @@
             //    --------------------------
 
             bindings = <
-            //      1             2             3             4              5             6
-            /*L1*/  &kp F1        &kp F2        &kp F3        &kp F4         &kp F5        &kp F6       
-            /*R1*/  &kp F7        &kp F8        &kp F9        &kp F10        &kp F11       &kp F12
-            /*L2*/  &kp TAB       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5       
-            /*R2*/  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &none
-            /*L3*/  &kp ESCAPE    &none         &kp EQUAL     &kp PLUS       &kp GRAVE     &kp TILDE
-            /*R3*/  &none         &none         &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK &kp K_FORWARD
-            /*L4*/                                            &none          &none         &none        
-            /*R4*/  &kp RCTRL     &kp SPACE     &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7        &kp F8        &kp F9        &kp F10        &kp F11        &kp F12
+&kp TAB     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &none
+&kp ESCAPE  &none         &kp EQUAL     &kp PLUS      &kp GRAVE     &kp TILDE    &kp COMMA     &kp PERIOD    &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK  &kp K_FORWARD
+                                        &none         &none         &none        &kp RCTRL     &kp SPACE     &none
             >;
         };
 
-        SYM {            
+        SYM {
             //       1     2     3      4       5        6
             //LINKS--------------------------------------------
             //L1/ |  |  |  {  |  }  |  [    |  ]     |   '    |
@@ -91,16 +81,11 @@
             //R4/ |     | XXX |     |--------------------------
             //    -------------------
 
-            bindings = < 
-            //      1             2                 3                 4             5                      6
-            /*L1*/  &kp RA(NUBS)  &kp RA(N7)        &kp RA(N0)        &kp RA(N8)    &kp RA(N9)             &kp PIPE
-            /*R1*/  &kp EXCL      &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
-            /*L2*/  &kp RA(E)     &kp SQT           &kp MINUS         &kp STAR      &kp LEFT_PARENTHESIS   &kp AT  
-            /*R2*/  &kp UNDER     &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_BRACKET      &kp DOLLAR
-            /*L3*/  &kp RA(Q)     &kp NUBS          &kp LS(NUBS)      &kp AMPS      &kp RA(MINUS)          &kp BACKSLASH
-            /*R3*/  &kp CARET     &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
-            /*L4*/                                                    &none         &kp SPACE              &kp LEFT_SHIFT    
-            /*R4*/  &none         &none             &none
+            bindings = <
+&kp RA(NUBS)  &kp RA(N7)  &kp RA(N0)    &kp RA(N8)  &kp RA(N9)            &kp PIPE          &kp EXCL   &kp LEFT_BRACKET  &kp RIGHT_BRACE   &kp SEMI      &kp PERCENT            &kp HASH
+&kp RA(E)     &kp SQT     &kp MINUS     &kp STAR    &kp LEFT_PARENTHESIS  &kp AT            &kp UNDER  &kp COMMA         &kp DOT           &kp SLASH     &kp RIGHT_BRACKET      &kp DOLLAR
+&kp RA(Q)     &kp NUBS    &kp LS(NUBS)  &kp AMPS    &kp RA(MINUS)         &kp BACKSLASH     &kp CARET  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp RIGHT_PARENTHESIS  &kp RA(RIGHT_BRACKET)
+                                        &none       &kp SPACE             &kp LEFT_SHIFT    &none      &none             &none
             >;
         };
 
@@ -119,15 +104,10 @@
             //    -----------------------------------------------
 
             bindings = <
-            //      1                    2                   3                4                5                 6        
-            /*L1*/  &kp LC(RA(DEL))      &kp K_CONTEXT_MENU  &kp UP_ARROW     &none            &kp PAGE_UP       &bt BT_PRV      
-            /*R1*/  &mwh SCROLL_UP       &mkp LCLK           &mmv MOVE_UP     &mkp RCLK        &kp C_REWIND      &kp C_FAST_FORWARD
-            /*L2*/  &kp C_BRIGHTNESS_INC &kp LEFT_ARROW      &kp DOWN         &kp RIGHT        &kp PAGE_DOWN     &bt BT_NXT       
-            /*R2*/  &msc SCROLL_DOWN     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_VOL_DN      &kp C_VOL_UP
-            /*L3*/  &kp C_BRIGHTNESS_DEC &kp HOME            &kp INSERT       &kp END          &kp PRINTSCREEN   &none             
-            /*R3*/  &mkp MB3             &mwh MOVE_LEFT      &mwh MOVE_RIGHT  &kp DEL          &kp C_PLAY_PAUSE  &kp C_MUTE
-            /*L4*/                                                            &kp LEFT_WIN     &kp SPACE         &kp LEFT_SHIFT    
-            /*R4*/  &none                &none               &none
+&kp LC(RA(DEL))       &kp K_CONTEXT_MENU  &kp UP_ARROW  &none         &kp PAGE_UP      &bt BT_PRV        &mwh SCROLL_UP    &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &kp K_PREV         &kp K_SCREENSAVER
+&kp C_BRIGHTNESS_INC  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN    &bt BT_NXT        &msc SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
+&kp C_BRIGHTNESS_DEC  &kp HOME            &kp INSERT    &kp END       &kp PRINTSCREEN  &none             &mkp MB3          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &kp DEL          &kp K_PLAY_PAUSE   &kp K_MUTE
+                                                        &kp LEFT_WIN  &kp SPACE        &kp LEFT_SHIFT    &none             &none           &none
             >;
         };
     };
