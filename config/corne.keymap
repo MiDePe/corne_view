@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
+#define U_MOUSE_MOVE_MAX 3000                     /* <--- New max speed setting (default: 600, 1400) */
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
@@ -19,8 +19,19 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
+#define U_MOUSE_MOVE_TURBO_MAX 3000                     /* <--- New max speed setting (default: 600) */
+#undef MOVE_UP_TURBO
+#undef MOVE_DOWN_TURBO
+#undef MOVE_LEFT_TURBO
+#undef MOVE_RIGHT_TURBO
+#define MOVE_UP_TURBO MOVE_VERT(-U_MOUSE_MOVE_TURBO_MAX)
+#define MOVE_DOWN_TURBO MOVE_VERT(U_MOUSE_MOVE_TURBO_MAX)
+#define MOVE_LEFT_TURBO MOVE_HOR(-U_MOUSE_MOVE_TURBO_MAX)
+#define MOVE_RIGHT_TURBO MOVE_HOR(U_MOUSE_MOVE_TURBO_MAX)
+
+
 &mmv {
-	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+	time-to-max-speed-ms = <1000>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 / {
     combos {
@@ -30,66 +41,77 @@
             bindings = <&bt BT_CLR>;
             key-positions = <5 17>;
             layers = <3>;
+            timeout-ms = <50>;
         };
 
         n0 {
             bindings = <&kp N0>;
             key-positions = <22 23>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <13 12>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <13 14>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <14 15>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <15 16>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <18 19>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <20 19>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <20 21>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         n9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <22 21>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
