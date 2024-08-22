@@ -44,72 +44,72 @@
             timeout-ms = <20>;
         };
 
-        n0 {
-            bindings = <&kp N0>;
-            key-positions = <22 23>;
-            layers = <0>;
-            timeout-ms = <5>;
-        };
-
         n1 {
             bindings = <&kp NUMBER_1>;
-            key-positions = <13 12>;
+            key-positions = <6 7>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n2 {
             bindings = <&kp NUMBER_2>;
-            key-positions = <13 14>;
+            key-positions = <7 8>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n3 {
             bindings = <&kp NUMBER_3>;
-            key-positions = <14 15>;
+            key-positions = <8 9>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n4 {
             bindings = <&kp NUMBER_4>;
-            key-positions = <15 16>;
+            key-positions = <18 19>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n5 {
             bindings = <&kp NUMBER_5>;
-            key-positions = <16 17>;
+            key-positions = <19 20>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <18 19>;
+            key-positions = <20 21>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n7 {
             bindings = <&kp NUMBER_7>;
-            key-positions = <20 19>;
+            key-positions = <30 31>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n8 {
             bindings = <&kp NUMBER_8>;
-            key-positions = <20 21>;
+            key-positions = <31 32>;
             layers = <0>;
             timeout-ms = <5>;
         };
 
         n9 {
             bindings = <&kp NUMBER_9>;
-            key-positions = <22 21>;
+            key-positions = <32 33>;
+            layers = <0>;
+            timeout-ms = <5>;
+        };
+        
+        n0 {
+            bindings = <&kp N0>;
+            key-positions = <33 34>;
             layers = <0>;
             timeout-ms = <5>;
         };
