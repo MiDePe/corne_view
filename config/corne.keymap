@@ -166,7 +166,7 @@
             /*L2*/  &kp TAB       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5       
             /*R2*/  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &none
             /*L3*/  &kp ESCAPE    &none         &kp EQUAL     &kp PLUS       &kp GRAVE     &kp TILDE
-            /*R3*/  &kp DOT       &kp COMMA     &kp SPACE     &kp BACKSPACE  &kp K_AC_BACK &kp K_FORWARD
+            /*R3*/  &kp DOT       &kp COMMA     &kp SPACE     &kp BACKSPACE  &kp K_BACK    &kp K_FORWARD
             /*L4*/                                            &none          &none         &none        
             /*R4*/  &kp RCTRL     &kp SPACE     &none
             >;
@@ -216,7 +216,7 @@
             bindings = <
             //      1                    2                   3                4                5                 6        
             /*L1*/  &kp LC(RA(DEL))      &kp K_CONTEXT_MENU  &kp UP_ARROW     &none            &kp PAGE_UP       &bt BT_PRV      
-            /*R1*/  &mwh SCROLL_UP       &mkp LCLK           &mmv MOVE_UP     &mkp RCLK        &kp K_REWIND      &kp K_FAST_FORWARD
+            /*R1*/  &mwh SCROLL_UP       &mkp LCLK           &mmv MOVE_UP     &mkp RCLK        &kp K_PREVIOUS    &kp K_NEXT
             /*L2*/  &kp C_BRIGHTNESS_INC &kp LEFT_ARROW      &kp DOWN         &kp RIGHT        &kp PAGE_DOWN     &bt BT_NXT       
             /*R2*/  &msc SCROLL_DOWN     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp K_VOL_DN      &kp K_VOL_UP
             /*L3*/  &kp C_BRIGHTNESS_DEC &kp HOME            &kp INSERT       &kp END          &kp PRINTSCREEN   &none             
