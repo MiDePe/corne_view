@@ -44,7 +44,7 @@
             timeout-ms = <20>;
         };
 
-        n1 {
+        /*n1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <6 7>;
             layers = <0>;
@@ -112,7 +112,7 @@
             key-positions = <33 34>;
             layers = <0>;
             timeout-ms = <20>;
-        };
+        };*/
     };
 
     keymap {
@@ -127,7 +127,7 @@
             //L4/ -------------------------| <NUM>  | Space |   Enter   |
             //RECHTS-----------------------------------------------------
             //R1/ |   Z    |   U   |   I   |  O     | Home  | ALT GR    |
-            //R2/ |   H    |   J   |   K   |  L     | Sleep | CAPS LOCK |
+            //R2/ |   H    |   J   |   K   |  L     |       | CAPS LOCK |
             //R3/ |   N    |   M   |   P   | Backsp |  Tab  | STRG R    |
             //R4/ | ShiftR | <SYM> | <NAV> |-----------------------------
             //    --------------------------
@@ -137,7 +137,7 @@
             /*L1*/  &kp LEFT_ALT     &kp Q  &kp W  &kp E           &kp R             &kp T      
             /*R1*/  &kp Y            &kp U  &kp I  &kp O           &kp C_AC_HOME     &kp RIGHT_ALT
             /*L2*/  &kp LEFT_WIN     &kp A  &kp S  &kp D           &kp F             &kp G      
-            /*R2*/  &kp H            &kp J  &kp K  &kp L           &kp C_SLEEP_MODE  &kp CLCK
+            /*R2*/  &kp H            &kp J  &kp K  &kp L           &none             &kp CLCK
             /*L3*/  &kp LEFT_CONTROL &kp Z  &kp X  &kp C           &kp V             &kp B
             /*R3*/  &kp N            &kp M  &kp P  &kp BACKSPACE   &kp TAB           &kp RIGHT_CONTROL
             /*L4*/                                 &mo 1           &kp SPACE         &kp ENTER  
@@ -155,7 +155,7 @@
             //RECHTS--------------------------------------------------
             //R1/ | F7     | F8     | F9    | F10    | F11    | F12  |
             //R2/ |  6     |  7     |  8    |  9     |  0     |      |
-            //R3/ |        |        |       | Backsp | Zurück |  Vor | <- Android
+            //R3/ |  .     |  ,     |       | Backsp | Zurück |  Vor | <- Android
             //R4/ | ShiftR | Space  |       |-------------------------
             //    --------------------------
 
@@ -166,7 +166,7 @@
             /*L2*/  &kp TAB       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5       
             /*R2*/  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &none
             /*L3*/  &kp ESCAPE    &none         &kp EQUAL     &kp PLUS       &kp GRAVE     &kp TILDE
-            /*R3*/  &none         &none         &kp SPACE     &kp BACKSPACE  &kp C_AC_BACK &kp K_FORWARD
+            /*R3*/  &kp DOT       &kp COMMA     &kp SPACE     &kp BACKSPACE  &kp K_AC_BACK &kp K_FORWARD
             /*L4*/                                            &none          &none         &none        
             /*R4*/  &kp RCTRL     &kp SPACE     &none
             >;
@@ -216,11 +216,11 @@
             bindings = <
             //      1                    2                   3                4                5                 6        
             /*L1*/  &kp LC(RA(DEL))      &kp K_CONTEXT_MENU  &kp UP_ARROW     &none            &kp PAGE_UP       &bt BT_PRV      
-            /*R1*/  &mwh SCROLL_UP       &mkp LCLK           &mmv MOVE_UP     &mkp RCLK        &kp C_REWIND      &kp C_FAST_FORWARD
+            /*R1*/  &mwh SCROLL_UP       &mkp LCLK           &mmv MOVE_UP     &mkp RCLK        &kp K_REWIND      &kp K_FAST_FORWARD
             /*L2*/  &kp C_BRIGHTNESS_INC &kp LEFT_ARROW      &kp DOWN         &kp RIGHT        &kp PAGE_DOWN     &bt BT_NXT       
-            /*R2*/  &msc SCROLL_DOWN     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_VOL_DN      &kp C_VOL_UP
+            /*R2*/  &msc SCROLL_DOWN     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp K_VOL_DN      &kp K_VOL_UP
             /*L3*/  &kp C_BRIGHTNESS_DEC &kp HOME            &kp INSERT       &kp END          &kp PRINTSCREEN   &none             
-            /*R3*/  &mkp MB3             &mwh MOVE_LEFT      &mwh MOVE_RIGHT  &kp DEL          &kp C_PLAY_PAUSE  &kp C_MUTE
+            /*R3*/  &mkp MB3             &mwh MOVE_LEFT      &mwh MOVE_RIGHT  &kp DEL          &kp K_PLAY_PAUSE  &kp K_MUTE
             /*L4*/                                                            &kp LEFT_WIN     &kp SPACE         &kp LEFT_SHIFT    
             /*R4*/  &none                &none               &none
             >;
